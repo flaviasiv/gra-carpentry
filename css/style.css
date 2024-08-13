@@ -926,8 +926,8 @@ form button{
     }
     .popup .content p{
         font-size: 16px;
-        margin: 30px auto;
-        padding-bottom: 30px;
+        margin: auto;
+        padding: 30px 10px 70px;
     }
 }
 
