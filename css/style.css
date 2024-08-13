@@ -343,13 +343,13 @@ swiper-slide.swiper1 {
         position: relative;
         justify-content: space-between;
         align-items: center;
-        width: 395px;
+        width: 375px;
         height: 97px;
         padding: auto;
     }
     .bgservcar{
         width: 100%;
-        max-width: 400px;
+        max-width: 380px;
     }
     .bgserv, .aboutimgpref{display: none;}    
 }
@@ -506,7 +506,7 @@ swiper-slide.swiper1 {
     }
     .abouttext p, .abouttext{
         text-align: center;
-        width: 433px;
+        width: 383px;
         margin: auto;
         font-size: 14px;
     }
