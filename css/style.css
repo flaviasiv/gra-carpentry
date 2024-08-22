@@ -100,8 +100,28 @@ swiper-container{
 }
 .poster{
     display: flex;
-    gap: 23px;
+    gap: 423px;
     background-color: #000;
+}
+@media screen and (max-width:1700px) {
+    .poster{
+        gap: 323px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .poster{
+        gap: 250px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .poster{
+        gap: 150px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .poster{
+        gap: 70px;
+    }
 }
 .posterinfos{
     display: flex;
