@@ -109,7 +109,7 @@ header {
     cursor: pointer;
     align-items: center;
 }
-/* .menusocial ul a svg{
+.menusocial ul a svg{
   clip-path: #000;
 }
 .menusocial ul a:hover svg{
@@ -119,7 +119,7 @@ header {
 .menusocial ul a:hover svg circle{
   fill: #fff;
   transition: 0.2s ease-in-out;
-} */
+}
 .callnow a{
     display: flex;
     justify-content: center;

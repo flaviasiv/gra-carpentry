@@ -428,14 +428,14 @@ swiper-slide.swiper1 {
     right: 0;
     max-width: 510px;
 }
-.preferencecard:hover{
+/* .preferencecard:hover{
     background: #CAAA57;
     transition: 0.3s all;
 }
 .preferencecard:hover h3{
     color: #000;
     transition: 0.3s all;
-}
+}*/
 .preferencecard svg{
     width: 130px;
     height: 130px;
