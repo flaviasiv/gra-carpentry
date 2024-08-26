@@ -98,13 +98,18 @@ swiper-container{
 }
 .postercontainer{
     margin-top: 80px;
+    background-color: #000;
 }
 .poster{
     display: flex;
-    gap: 423px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 50px;
+    margin: auto;
+    height: 34.5vw;
     background-color: #000;
 }
-@media screen and (max-width:1700px) {
+/*@media screen and (max-width:1700px) {
     .poster{
         gap: 323px;
     }
@@ -123,7 +128,7 @@ swiper-container{
     .poster{
         gap: 70px;
     }
-}
+} */
 .posterinfos{
     display: flex;
     flex-direction: column;
@@ -131,14 +136,15 @@ swiper-container{
     width: 50vw;    
     justify-content: center;
     background-color: #000;
-    align-items: end;
 }
 .postercontainer video{
+    position: absolute;
     display: block;
-    max-width: 50vw;    
+    max-width: 61vw;    
     z-index: 999;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    right: 0;
 }
 .posterinfos h3{
     display: flex;
@@ -161,17 +167,19 @@ swiper-container{
     .poster{
         flex-direction: column;
         text-align: center;
+        height: 100%;
     }
     .posterinfos{
         flex-direction: column;
         width: 100%;    
         align-items: center;
     }
-    .postercontainer img{
+    .postercontainer video{
+        position: relative;
         width: 100%;    
         max-width: 900px;
         margin: auto;
-        padding-left: 5%;
+        margin-left: 5%;
         object-fit: cover;
     }
     .posterinfos h3{
@@ -427,15 +435,29 @@ swiper-slide.swiper1 {
     gap: 27px;
     right: 0;
     max-width: 510px;
+    margin-left: -23px;
+    padding-left: 23px;
 }
 /* .preferencecard:hover{
     background: #CAAA57;
     transition: 0.3s all;
-}
+} */
 .preferencecard:hover h3{
     color: #000;
     transition: 0.3s all;
-}*/
+}
+.preferencecard:hover svg{
+    stroke: #000;
+    transition: 0.2s all;
+}
+.preferencecard:hover svg path{
+    fill: #000;
+    transition: 0.2s all;
+}
+.preferencecard:hover{
+    box-shadow: 10px 10px 16px rgba(3, 3, 3, 0.5); 
+    transition: 0.3s all;
+}
 .preferencecard svg{
     width: 130px;
     height: 130px;
@@ -455,6 +477,7 @@ swiper-slide.swiper1 {
 }
 .logo{
     display: flex;
+    max-width: 350px;
     margin: auto;
 }
 .reviewstitle{
@@ -474,7 +497,7 @@ swiper-slide.swiper1 {
         margin-top: -5%;    
     }
     .abouttext{
-        width: 433px;
+        width: 453px;
     }
 }
 @media screen and (max-width:990px) {
@@ -544,7 +567,7 @@ swiper-slide.swiper1 {
     padding: 70px 0;
     z-index: 999;
 }
-.gallerytitle .small{color: #CAAA57;}
+.gallerytitle .small{color: #000;}
 .gallerytitle p{
     font-family: "Glacial Indifference";
     font-size: 16px;
@@ -579,6 +602,12 @@ swiper-slide.swiper1 {
 @media screen and (max-width:900px) {    
     .gallerycontainer{
         background-size: 250%;
+    }
+    .bggallery{
+        height: 850px;
+    }
+    .videobg{
+        height: 850px;
     }
     .mySwiper3 {
       height:290px;
@@ -617,7 +646,6 @@ swiper-slide.swiper1 {
     font-weight: 400;
     line-height: 120%; /* 67.2px */
     text-transform: uppercase;
-    color: #CAAA57;
 }
 .ig-embed iframe{
     width:100%;
@@ -631,6 +659,9 @@ swiper-slide.swiper1 {
     }    
 }
 @media screen and (max-width:580px) {
+    .ig-embed h2{
+        font-size: 36px;
+    }
     .ig-embed iframe{
         width:100%;
         max-width: 400px; 
@@ -730,6 +761,11 @@ form button{
     font-weight: 600;
     margin-top: 15px;
     border:1px solid #000
+}
+form button:hover{
+    background-color: #CAAA57;
+    color: #FFF;
+    border:1px solid #fff
 }
 #form input:focus, #form textarea:focus{
     outline: 1px solid #fff;     /* oranges! yey */
@@ -904,6 +940,7 @@ form button{
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    color: #FFF;
 }
 .callpopup{
     border-radius: 100px;
@@ -916,12 +953,13 @@ form button{
     font-weight: 800;
     line-height: 150%; 
 }
-.slidegrid{
+/*
+.swiperpop{
     background-color: #000;
-}
-.mySwiper4 {
+} 
+    .mySwiper4 {
   width: 100%;
-  height:460px;
+  height:960px;
   max-width: 9000px;
   cursor: grab;
   margin: 0 auto !important;
@@ -938,7 +976,7 @@ form button{
   height: 400px;
   margin: auto;
   object-fit: cover !important;
-}
+} */
 @media screen and (max-width:950px) {
     .content{
         flex-direction: column;
@@ -961,7 +999,6 @@ form button{
         padding: 30px 10px 70px;
     }
 }
-
 a{
     text-decoration: none;
     color: inherit;
