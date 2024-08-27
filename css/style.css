@@ -240,7 +240,7 @@ swiper-slide.swiper1 {
     max-width: 509px;
     font-family: "Glacial Indifference";
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 150%;
 }
 .servibtn{
@@ -567,7 +567,7 @@ swiper-slide.swiper1 {
     padding: 70px 0;
     z-index: 999;
 }
-.gallerytitle .small{color: #000;}
+.gallerytitle .small{color: #fff;}
 .gallerytitle p{
     font-family: "Glacial Indifference";
     font-size: 16px;
@@ -921,11 +921,11 @@ form button:hover{
     flex-direction: column;
     gap: 30px;
 }
-.popupimg{
+/* .popupimg{
     width: 100%;
     padding-left: 10%;
     float: right;
-}
+} */
 .popup .content h1{
     display: flex;
     flex-direction: column;

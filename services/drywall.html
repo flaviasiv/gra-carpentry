@@ -46,13 +46,6 @@
       justify-content: center;
       align-items: center;
     }
-    .swiperpop swiper-slide img {
-      display: block;
-      width: 100%;
-      max-width: 588px;
-      height: 100%;
-      object-fit: cover;
-    }
     .swiperpop swiper-container {
       width: 100%;
       max-width: 849px;
@@ -72,6 +65,8 @@
       height: 20%;
       box-sizing: border-box;
       padding: 10px 0;
+      /* width por ser apenas 2 imgs */
+      max-width: 500px;
     }
     .swiperpop .mySwiper4 swiper-slide {
       width: 25%;
@@ -84,10 +79,15 @@
     swiper-slide img {
       display: block;
       width: 100%;
-      max-width: 100px;
+      /* max-width: 100px; */
       height: 100%;
       object-fit: cover;
       align-items: center;
+    }
+    .mySwiper swiper-slide img {
+      display: block;
+      width:590px;
+      height: 550px;
     }
     @media screen and (max-width:990px) {
       .swiperpop swiper-slide img {

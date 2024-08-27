@@ -46,13 +46,6 @@
       justify-content: center;
       align-items: center;
     }
-    .swiperpop swiper-slide img {
-      display: block;
-      width: 100%;
-      max-width: 588px;
-      height: 100%;
-      object-fit: cover;
-    }
     .swiperpop swiper-container {
       width: 100%;
       max-width: 849px;
@@ -86,17 +79,22 @@
     swiper-slide img {
       display: block;
       width: 100%;
-      max-width: 100px;
+      /* max-width: 100px; */
       height: 100%;
       object-fit: cover;
       align-items: center;
+    }
+    .mySwiper swiper-slide img {
+      display: block;
+      width:590px;
+      height: 550px;
     }
     @media screen and (max-width:990px) {
       .swiperpop swiper-slide img {
         display: block;
         width: 100%;
         max-width: 350px;
-        height: 100%;
+        max-height: 300px;
         object-fit: cover;
       }
       .swiperpop swiper-container {
