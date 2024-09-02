@@ -87,23 +87,35 @@
     .mySwiper swiper-slide img {
       display: block;
       width:590px;
-      height: 550px;
+      height: 590px;
+    }
+    .mySwiper4 .swiper4 img{
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
     }
     @media screen and (max-width:990px) {
       .swiperpop swiper-slide img {
         display: block;
         width: 100%;
         max-width: 350px;
-        height: 100%;
+        height: 350px;
         object-fit: cover;
       }
       .swiperpop swiper-container {
         width: 100%;
-        max-width: 390px;
+        max-width: 350px;
         height: 300px;
         margin-left: auto;
         margin-right: auto;
-      }      
+      }     
+    .swiperpop .mySwiper4 {
+      max-width: 370px;
+    } 
+      .mySwiper4 .swiper4 img{
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
@@ -212,7 +224,7 @@
          </swiper-slide>
         </swiper-container>
  
-       <swiper-container class="mySwiper4 reveal" space-between="10" slides-per-view="4" loop="true"  free-mode="true"
+       <swiper-container class="mySwiper4 reveal" space-between="10" slides-per-view="3" loop="true"  free-mode="true"
        watch-slides-progress="true">
        <swiper-slide class="swiper4">
          <div class="swipercard">

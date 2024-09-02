@@ -321,7 +321,7 @@ swiper-slide.swiper1 {
 .bgservcar{
     display: block;
     position: absolute;
-    object-fit: 100%;
+    object-fit: cover;
     justify-content: center;
     width: 100%;
     border-radius: 16px;
@@ -378,10 +378,29 @@ swiper-slide.swiper1 {
         padding: auto;
     }
     .bgservcar{
+        max-width: 375px;
+    }
+    .servicescard{
         width: 100%;
-        max-width: 380px;
+        max-width: 350px;
+        margin: auto;
     }
     .bgserv, .aboutimgpref{display: none;}    
+}
+@media screen and (max-width:400px) {
+    .servicescard a{
+        width: 355px;
+        height: 87px;
+    }
+    .bgservcar{
+        max-width: 355px;
+    }
+    .servicescard{
+        width: 100%;
+        max-width: 355px;
+        margin: auto;
+    }
+    
 }
 .aboutimgpref{
     left: 10%;
@@ -408,7 +427,7 @@ swiper-slide.swiper1 {
 .abouttext{
     display: flex;
     flex-direction: column;
-    width: 733px;
+    max-width: 733px;
     gap: 70px;
 }
 .abouttext p{
@@ -509,7 +528,7 @@ swiper-slide.swiper1 {
         margin-top: -5%;    
     }
     .abouttext{
-        width: 453px;
+        max-width: 453px;
     }
 }
 @media screen and (max-width:990px) {
@@ -526,7 +545,7 @@ swiper-slide.swiper1 {
     }
     .abouttext p, .abouttext{
         text-align: center;
-        width: 383px;
+        max-width: 383px;
         margin: auto;
         font-size: 14px;
     }
@@ -543,6 +562,14 @@ swiper-slide.swiper1 {
     }
     .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
         font-size: 40px;
+    }
+}
+@media screen and (max-width:490px) {
+    .abouttext p, .abouttext{
+        max-width: 353px;
+    }
+    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
+        font-size: 36px;
     }
 }
 .videobg{
@@ -1015,7 +1042,7 @@ form button:hover{
     .popup .content p{
         font-size: 16px;
         margin: auto;
-        padding: 0px 10px 70px;
+        padding: 0 10px 0;
     }
 }
 a{
