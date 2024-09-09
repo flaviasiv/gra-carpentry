@@ -372,6 +372,8 @@ swiper-slide.swiper1 {
     }
     .servicescards{
         padding: 0 10px;
+        justify-content: center;
+        align-items: center;
     }
     .servicescard a{
         display: flex;
@@ -561,9 +563,16 @@ swiper-slide.swiper1 {
     }
     .preferencegrid{
         align-items: center;
+        margin: auto;
     }
     .preferencecard{
         text-align: left;
+        margin: auto;
+        padding: 0;
+    }
+    .preferencecard h3{
+        font-size: 23.035px;
+        line-height: 100%; /* 23.035px */
     }
     .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
         font-size: 40px;
@@ -932,6 +941,7 @@ form button:hover{
         display: flex;
         justify-content: center;
         width: 100%;
+        height: 350px;
         margin: auto;
     }
     .mapsfooter .mapinfo ul{
