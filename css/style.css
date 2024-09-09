@@ -167,6 +167,7 @@ swiper-container{
     .poster{
         flex-direction: column;
         text-align: center;
+        padding: 0 20px;
         height: 100%;
     }
     .posterinfos{
@@ -336,6 +337,10 @@ swiper-slide.swiper1 {
     z-index: 0;
 }
 @media screen and (max-width:990px) {
+    swiper-slide.swiper1 {
+        margin-left: 10px;
+        font-size: 12px;
+    }
     .servicestitle{
         text-align: center;
     }
@@ -689,13 +694,18 @@ swiper-slide.swiper1 {
     line-height: 120%; /* 67.2px */
     text-transform: uppercase;
 }
-.ig-embed iframe{
+.ig-embed .elfsight-app-e99f3581-c28a-4af5-b1b4-fcbe03e83501{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+/* .ig-embed iframe{
     width:100%;
     max-width: 900px; 
     height: 810px;
-}
+} */
 @media screen and (max-width:980px) {
-    .ig-embed iframe{
+    .ig-embed .elfsight-app-e99f3581-c28a-4af5-b1b4-fcbe03e83501{
         max-width: 500px; 
         height: 500px;
     }    
@@ -704,10 +714,10 @@ swiper-slide.swiper1 {
     .ig-embed h2{
         font-size: 36px;
     }
-    .ig-embed iframe{
+    .ig-embed .elfsight-app-e99f3581-c28a-4af5-b1b4-fcbe03e83501{
         width:100%;
-        max-width: 400px; 
-        height: 450px;
+        max-width: 300px; 
+        height: auto;
     }    
 }
 .formgrid{
