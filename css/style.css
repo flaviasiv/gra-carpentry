@@ -181,8 +181,8 @@ swiper-container{
         width: 100%;    
         max-width: 900px;
         margin: auto;
-        margin-left: 5%;
         object-fit: cover;
+        border-radius: 30px;
     }
     .posterinfos h3{
         font-size: 40px;
@@ -370,9 +370,14 @@ swiper-slide.swiper1 {
         width: 206px;
         color: #fff;
     }
+    .servicesgrid{
+        max-width: 420px;
+        margin: auto;
+    }
     .servicescards{
-        padding: 0 10px;
+        padding: 0;
         justify-content: center;
+        margin: auto;
         align-items: center;
     }
     .servicescard a{
@@ -389,7 +394,7 @@ swiper-slide.swiper1 {
     }
     .servicescard{
         width: 100%;
-        max-width: 350px;
+        max-width: 375px;
         margin: auto;
     }
     .bgserv, .aboutimgpref{display: none;}    
