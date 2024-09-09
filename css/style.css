@@ -25,7 +25,7 @@ html{
     scroll-behavior: smooth;
     scroll-padding: 30px;
 }
-/* .reveal{
+.reveal{
     position: relative;
     transform: translateX(-50%);
     opacity: 0.4;
@@ -44,7 +44,7 @@ html{
 .reveal.active.revealtext{
     transform: translateX(0%);
     opacity: 1;
-} */
+}
 :root {
     --swiper-navigation-color: #eee;
     --swiper-pagination-color: #fff;
