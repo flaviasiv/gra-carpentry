@@ -694,6 +694,7 @@ swiper-slide.swiper1 {
     padding: 80px 0 30px;
     color: #000;
     z-index: 999;
+    height: 100%;
 }
 .ig-embed h2{
     display: flex;
