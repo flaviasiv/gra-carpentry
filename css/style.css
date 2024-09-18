@@ -274,7 +274,7 @@ swiper-slide.swiper1 {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 .servicescards h1{
@@ -288,9 +288,12 @@ swiper-slide.swiper1 {
     line-height: 100%; /* 32px */
     text-transform: uppercase;
     width: 270px;
-    margin: auto;
+    margin: 0 auto;
     z-index: 99;
     justify-content: center;
+}
+.servicescle{
+    justify-content: start;
 }
 .servicescarp h1{
     color:#CAAA57;
