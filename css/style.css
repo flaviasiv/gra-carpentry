@@ -1028,6 +1028,9 @@ form button:hover{
     font-weight: 800;
     line-height: 150%; 
 }
+.swiperpop  img {
+    border-radius: 20px;
+}
 /*
 .swiperpop{
     background-color: #000;
