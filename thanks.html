@@ -26,13 +26,13 @@
     .thankscontainer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: #A0905F;
         color: #000;
         height: 100vw;
         text-align: center;
         gap: 80px;
+        padding-top: 50px;
     }
     .thankscontainer svg{
         width: 150px;
@@ -53,6 +53,13 @@
         font-weight: bold;
         line-height:200%;
     }
+    @media screen and (max-width:1000px) {
+    .thankscontainer p{
+        font-size: 20px;
+        line-height: 100%;
+    }
+      
+    }
   </style>
 </head>
 <body>
@@ -63,7 +70,7 @@
             <br><br>
             Our team will review your message and get back to you as soon as possible. If you have any additional questions or need further assistance in the meantime, please don't hesitate to let us know.
             </p>
-            <div class="callnow"><button><a href="./index.html" target="_blank">Back to Home Page</a></button></div>
+            <div class="callnow"><button><a href="./index.html" >Back to Home Page</a></button></div>
     </main>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/javascript.js"></script>
