@@ -439,6 +439,10 @@ swiper-slide.swiper1 {
     align-items: end;
     gap: 80px;
 }
+.aboutprefcontain{
+    width: 100%;
+    max-width: 47vw;
+}
 .abouttext{
     display: flex;
     flex-direction: column;
@@ -547,6 +551,9 @@ swiper-slide.swiper1 {
     }
 }
 @media screen and (max-width:990px) {
+    .aboutprefcontain{
+        max-width: 100vw;
+    }
     .aboutimgw{display: none;}
     .about{
         padding: 0;
