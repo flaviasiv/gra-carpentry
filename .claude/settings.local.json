@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l 'href=\"https://www.facebook.com\"' *.html)",
+      "Bash(grep -l 'href=\"https://www.instagram.com//\"' *.html)",
+      "Bash(sed -i 's|href=\"https://www.facebook.com\"|href=\"https://www.facebook.com/profile.php?id=61554852470862\"|g' *.html)",
+      "Bash(sed -i 's|href=\"https://www.instagram.com//\"|href=\"https://www.instagram.com/gracarpentry/\"|g' *.html)",
+      "Bash(grep -h \"facebook\\\\|instagram\" *.html)"
+    ]
+  }
+}
