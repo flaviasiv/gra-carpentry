@@ -31,3 +31,14 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// recaptcha guard
+const contactForm = document.getElementById("form");
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    if (typeof grecaptcha !== "undefined" && grecaptcha.getResponse().length === 0) {
+      e.preventDefault();
+      alert("Please confirm you're not a robot.");
+    }
+  });
+}

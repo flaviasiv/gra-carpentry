@@ -17,6 +17,7 @@
 body{
     font-family: 'Glacial Inddifference', sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 main{
     background: white;
@@ -24,6 +25,7 @@ main{
 html{
     scroll-behavior: smooth;
     scroll-padding: 30px;
+    overflow-x: hidden;
 }
 .reveal{
     position: relative;
@@ -776,7 +778,8 @@ swiper-slide.swiper1 {
     margin: auto;
 }
 .formp h2{
-    width: 660px;    
+    width: 480px;
+    max-width: 100%;
     color: #fff;
     text-transform: uppercase;
 }
@@ -800,14 +803,14 @@ form {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width:750px;
+    gap: 14px;
+    width:480px;
     max-width: 100%;
     margin: auto;
-    height: 579px;
     background-color: #FFF;
-    border-radius: 24px;
-    padding: 32px;
+    border-radius: 20px;
+    padding: 28px 32px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
     z-index: 99;
 }
 .formgroup{
@@ -818,21 +821,26 @@ form {
     display: flex;
     flex-direction: column;
     color: #000;
-    gap: 10px;
+    gap: 6px;
+    font-size: 15px;
 }
 #form input, textarea{
     width: 100%;
     list-style: none;
-    padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #333333d8;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #33333380;
     resize: none;
+    font-family: inherit;
 }
 #form input{
-    height:  46px;    
+    height:  42px;
+}
+#form textarea{
+    height: 100px;
 }
 form button{
-    width: 120px;
+    width: 140px;
     list-style: none;
     color: #000;
     border-radius: 16px;
@@ -842,8 +850,9 @@ form button{
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 15px;
-    border:1px solid #000
+    margin-top: 2px;
+    border:1px solid #000;
+    transition: background-color .2s ease, color .2s ease;
 }
 form button:hover{
     background-color: #CAAA57;
@@ -852,6 +861,17 @@ form button:hover{
 }
 #form input:focus, #form textarea:focus{
     outline: 1px solid #fff;     /* oranges! yey */
+}
+.g-recaptcha{
+    align-self: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+@media screen and (max-width:400px) {
+    .g-recaptcha{
+        transform: scale(0.85);
+        transform-origin: center;
+    }
 }
 @media screen and (max-width:980px) {
     .formp{
